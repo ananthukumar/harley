@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: '1903 sans';
+    src: url(../public/fonts/1903\ sans/1903Sans-Regular.woff2) format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '1903 sans';
+    src: url(../public/fonts/1903\ sans/1903Sans-Bold.woff2) format('woff2');
+    font-weight: 700;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: '1903 condenced';
+    src: url(../public/fonts/1903\ condenced/1903SansCondensed-Bold.woff2) format('woff2');
+    font-weight: 700;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: '1903 condenced';
+    src: url(../public/fonts/1903\ condenced/1903SansCondensed-Regular.woff2) format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+body {
+    font-family: '1903 sans';
+    font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: '1903 condenced';
+}
+
+.bg-hme {
+    background-image: url(../src/assets/images/bg.png);
+    background-size: cover;
+}
+
+.image_2 {
+    position: absolute;
+    /* transition: 0.5s ease-in-out; */
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card_box:hover .image_1 {
+    opacity: 0;
+}
+
+.card_box:hover .image_2 {
+    opacity: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    background-color: #000;
+    height: 50px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 16px;
+}
