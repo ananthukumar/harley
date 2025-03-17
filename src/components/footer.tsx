@@ -6,10 +6,14 @@ import facebookIcon from '../assets/images/facebook.svg';
 import instaIcon from '../assets/images/insta.svg';
 import youtubeIcon from '../assets/images/youtube.svg';
 import xIcon from '../assets/images/x.svg';
+import { IoCall } from "react-icons/io5";
+import { IoMdMail } from "react-icons/io";
+
 
 const Footer: React.FC = () => (
-  <footer className="bg-black pt-20 text-white">
+  <footer className="bg-black pt-8 sm:pt-10 lg:t-20 pb-2 text-white">
     <div className="container px-5 mx-auto">
+
       <div className="max-w-lg">
         <img src={harley} alt="" className="h-full w-full object-cover" />
       </div>
@@ -24,31 +28,32 @@ const Footer: React.FC = () => (
               Rammurthy nagar, Bangalore-
               560016</p>
           </div>
-          <div className="flex gap-5 items-start max-w-xs">
+          <div className="flex gap-5 items-center max-w-xs">
             <div className="border border-white inline-block p-2 flex-none">
-              <img src={location} alt="" width="16" />
+            <IoMdMail />
             </div>
             <p>contact@harley.com</p>
           </div>
-          <div className="flex gap-5 items-start max-w-xs">
+          <div className="flex gap-5 items-center max-w-xs">
             <div className="border border-white inline-block p-2 flex-none">
-              <img src={location} alt="" width="16" />
+            <IoCall  />
+
             </div>
             <p>+91 8593920102</p>
           </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-5">
-          <div className="uppercase text-sm gap-5 flex flex-col">
-            <Link to="" className="">home</Link>
+        <div className="grid grid-cols-2 gap-3 sm:gap-5">
+          <div className="uppercase text-xs sm:text-sm gap-3 sm:gap-5 flex flex-col">
+            <Link to="/" className="">home</Link>
             <Link to="" className="">about</Link>
-            <Link to="" className="">privacy policy</Link>
-            <Link to="" className="">terms & condition</Link>
+            <Link to="/privacy-policy" className="">privacy policy</Link>
+            <Link to="/terms-and-condition" className="">terms & condition</Link>
           </div>
-          <div className="uppercase text-sm gap-5 flex flex-col">
-            <Link to="" className="">shipping policy</Link>
-            <Link to="" className="">return policy</Link>
-            <Link to="" className="">cookies</Link>
+          <div className="uppercase text-xs sm:text-sm gap-3 sm:gap-5 flex flex-col">
+            <Link to="/shipping-policy" className="">shipping policy</Link>
+            <Link to="/retun-policy" className="">return policy</Link>
+            <Link to="/cookies-policy" className="">cookies</Link>
           </div>
         </div>
       </div>

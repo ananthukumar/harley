@@ -70,6 +70,8 @@ h6 {
     opacity: 100%;
 }
 
+/* swipper js */
+
 .swiper-button-prev,
 .swiper-button-next {
     font-size: 18px;
@@ -82,4 +84,35 @@ h6 {
 .swiper-button-prev::after,
 .swiper-button-next::after {
     font-size: 16px;
+}
+
+.banner-wrap {
+    z-index: 0;
+}
+
+.banner-text {
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    z-index: 1;
+    left: 12px;
+    right: 12px;
+}
+
+.mySwiper {
+    max-height: 100vh;
+}
+
+.swiper-horizontal>.swiper-pagination-progressbar,
+.swiper-pagination-progressbar.swiper-pagination-horizontal,
+.swiper-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite,
+.swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite {
+    height: 6px;
+    bottom: 0 !important;
+    top: auto;
+
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    background: #F26A2B;
 }
